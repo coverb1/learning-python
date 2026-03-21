@@ -143,11 +143,13 @@
 
 import time
 
-igihe=int(input('enter your time:'))
-for x in range(0,igihe):
-    second=x%60
-    print(f'00:00:{second}')
+igihe = int(input("Enter your time in seconds: "))
+
+for x in range(igihe, 0, -1):
+    hour = x // 3600
+    minute = (x % 3600) // 60
+    second = x % 60
+    print(f"{hour:02}:{minute:02}:{second:02}")
     time.sleep(1)
 
-print('it is time wake up')
-    
+print("It is time wake up!")
