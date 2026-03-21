@@ -141,15 +141,19 @@
 #   else:
 #    print(x)
 
-import time
+# import time
 
-igihe = int(input("Enter your time in seconds: "))
+# igihe = int(input("Enter your time in seconds: "))
 
-for x in range(igihe, 0, -1):
-    hour = x // 3600
-    minute = (x % 3600) // 60
-    second = x % 60
-    print(f"{hour:02}:{minute:02}:{second:02}")
-    time.sleep(1)
+# for x in range(igihe, 0, -1):
+#     hour = x // 3600
+#     minute = (x % 3600) // 60
+#     second = x % 60
+#     print(f"{hour:02}:{minute:02}:{second:02}")
+#     time.sleep(1)
 
-print("It is time wake up!")
+# print("It is time wake up!")
+
+for x in range(3):
+ for y in range(1,10):
+    print(y,end=' ')
