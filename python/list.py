@@ -92,7 +92,31 @@
 # print(f'you score is {score}')
 
 # dictonary a =a collection of  {key:value} pairs
-capital={'USA':'washington Dc','Rwanda':'Kigali'}
-capital.update({'Congo':'Kinshasa'})
-print(capital)
+# capital={'USA':'washington Dc','Rwanda':'Kigali'}
+# capital.update({'Congo':'Kinshasa'})
+# print(capital)
 # print(capital.get('USA'))
+
+menu={
+    'banana':22,
+    'cassava':33,
+    'eggs':44,
+    'juice':89
+}
+cart=[]
+total=0
+
+print('----------------MENU---------------------')
+for key,values in menu.items():
+    print(f'{key:10}:{values:.2f}')
+print('----------------MENU---------------------')
+
+while True:
+    food=input('enter from MENU: ')
+    if food=='q':
+     break
+    elif menu.get(food) is not None:
+     cart.append(food)
+     total+=menu.get(food)
+print(cart)
+print(total)
