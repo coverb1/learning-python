@@ -119,3 +119,4 @@ while True:
      cart.append(food)
      total+=menu.get(food)
 print(cart)
+print(total)
