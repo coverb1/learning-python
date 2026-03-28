@@ -22,16 +22,22 @@
 # fruits={"apple","orange","banana","coconut"}
 
 #shopping cart
+
 foods=[]
 prices=[]
-total=[]
+total=0
 food=''
 while food.lower()!='q':
  food=input(f'enter your food of the  ')
  if food!='q':
-   price=input(f'enter your price of the :$ ')
+   price=float(input(f'enter your price of the :$ '))
    foods.append(food)
    prices.append(price)
+for food in foods:
+  print(food)
+for price in prices:
+  total+=price
+  print(f'your total is :${total}')
  
     
     
